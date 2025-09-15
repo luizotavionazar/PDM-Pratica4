@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intecao)
         }
 
-        Log.d("Cycle do App","onCreate: Activity 1 criada")
+        Log.d("Cycle do App","onCreate: Activity 1 criada | Luiz")
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -36,31 +36,31 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        Log.d("Cycle do App", "onStart: Activity 1 iniciada")
+        Log.d("Cycle do App", "onStart: Activity 1 iniciada | Luiz")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.d("Cycle do App", "onResume: Activity 1 rodando")
+        Log.d("Cycle do App", "onResume: Activity 1 rodando | Luiz")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.d("Cycle do App", "onPause: Activity 1 pausada")
+        Log.d("Cycle do App", "onPause: Activity 1 pausada | Luiz")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.d("Cycle do App", "onStop: Activity 1 parada")
+        Log.d("Cycle do App", "onStop: Activity 1 parada | Luiz")
     }
 
     override fun onRestart() {
         super.onRestart()
-        Log.d("Cycle do App", "onRestart: Activity 1 reiniciada")
+        Log.d("Cycle do App", "onRestart: Activity 1 reiniciada | Luiz")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d("Cycle do App", "onDestroy: Activity 1 destruida")
+        Log.d("Cycle do App", "onDestroy: Activity 1 destruida | Luiz")
     }
 }
