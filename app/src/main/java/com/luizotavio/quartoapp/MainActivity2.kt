@@ -16,10 +16,10 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main2)
-        Log.d("Cycle","onCreate: Activity 2 criada")
+        Log.d("Cycle do App","onCreate: Activity 2 criada")
         val botaoRetorna: Button = findViewById(R.id.button)
         botaoRetorna.setOnClickListener {
-            finish()
+            onDestroy()
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -38,31 +38,31 @@ class MainActivity2 : AppCompatActivity() {
         //mensagemTexto.text="Olá, ${nome}!"
         //imagem.setImageResource(R.drawable.avatar)
 
-        Log.d("Cycle", "onStart: Activity 2 iniciada")
+        Log.d("Cycle do App", "onStart: Activity 2 iniciada")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.d("Cycle", "onResume: Activity 2 rodando")
+        Log.d("Cycle do App", "onResume: Activity 2 rodando")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.d("Cycle", "onPause: Activity 2 pausada")
+        Log.d("Cycle do App", "onPause: Activity 2 pausada")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.d("Cycle", "onStop: Activity 2 parada")
+        Log.d("Cycle do App", "onStop: Activity 2 parada")
     }
 
     override fun onRestart() {
         super.onRestart()
-        Log.d("Cycle", "onRestart: Activity 2 reiniciada")
+        Log.d("Cycle do App", "onRestart: Activity 2 reiniciada")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d("Cycle", "onDestroy: Activity 2 destruida")
+        Log.d("Cycle do App", "onDestroy: Activity 2 destruida")
     }
 }
