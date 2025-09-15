@@ -19,7 +19,7 @@ class MainActivity2 : AppCompatActivity() {
         Log.d("Cycle do App","onCreate: Activity 2 criada | Luiz")
         val botaoRetorna: Button = findViewById(R.id.button)
         botaoRetorna.setOnClickListener {
-            onDestroy()
+            finish()
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
